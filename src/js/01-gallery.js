@@ -6,7 +6,7 @@ import { galleryItems } from './gallery-items';
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
  
- 
+  
  
 const gallery = document.querySelector(".gallery");
 const galleryMarkup = createGalleryItemsMarkup(galleryItems);
@@ -33,4 +33,5 @@ function createGalleryItemsMarkup(galleryItems) {
         captionsData: "alt",
         captionDelay: 250,
 });
+ 
  
