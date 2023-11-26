@@ -8,8 +8,8 @@ form.addEventListener("submit", onFormSubmit);
 populateForm();
 
 function onFormInput(evt) {
-    const emailValue = evt.currentTarget.email.value;
-    const messageValue = evt.currentTarget.message.value;
+    const emailValue = form.email.value;
+    const messageValue = form.message.value;
     localStorage.setItem("feedback-form-state", JSON.stringify({"email": emailValue, "message": messageValue}));
 }
 
